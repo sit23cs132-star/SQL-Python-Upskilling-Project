@@ -1,0 +1,1417 @@
+# ============================================================
+# PYTHON UPSKILLING PROGRAMS
+# ALL 55 PROGRAMS
+# ============================================================
+
+# ============================================================
+# 1. SIMPLE HELLO WORLD
+# ============================================================
+
+print("========== Program 1 ==========")
+print("Hello World!")
+print()
+
+
+# ============================================================
+# 2. JUPYTER NOTEBOOK
+# ============================================================
+
+print("========== Program 2 ==========")
+print("Jupyter Notebook Created Successfully")
+print("Code cells and markdown cells can be added.")
+print()
+
+
+# ============================================================
+# 3. VS CODE SETUP
+# ============================================================
+
+print("========== Program 3 ==========")
+print("VS Code Python Extension Installed")
+print("Python file executed successfully")
+print()
+
+
+# ============================================================
+# 4. FLOAT PRECISION
+# ============================================================
+
+print("========== Program 4 ==========")
+
+def calculate_net_salary(salary, tax_rate):
+
+    if salary <= 0:
+        return "Invalid Salary"
+
+    if tax_rate < 0 or tax_rate > 1:
+        return "Invalid Tax Rate"
+
+    tax_amount = salary * tax_rate
+    net_salary = salary - tax_amount
+
+    return net_salary
+
+
+salary = 75000.5
+tax_rate = 0.18
+
+result = calculate_net_salary(salary, tax_rate)
+
+print(f"Salary        : {salary:.2f}")
+print(f"Tax Rate      : {tax_rate}")
+print(f"Net Salary    : {result:.2f}")
+print()
+
+
+# ============================================================
+# 5. MULTIPLE ASSIGNMENT
+# ============================================================
+
+print("========== Program 5 ==========")
+
+def display_coordinates():
+
+    x, y = (10, 20)
+
+    if isinstance(x, int) and isinstance(y, int):
+        print(f"X Coordinate : {x}")
+        print(f"Y Coordinate : {y}")
+    else:
+        print("Invalid Coordinates")
+
+display_coordinates()
+print()
+
+
+# ============================================================
+# 6. MODULO OPERATOR
+# ============================================================
+
+print("========== Program 6 ==========")
+
+def check_even_odd(number):
+
+    if not isinstance(number, int):
+        return "Invalid Number"
+
+    if number % 2 == 0:
+        return "Even"
+
+    return "Odd"
+
+
+number = 17
+
+print(f"Number : {number}")
+print("Result :", check_even_odd(number))
+print()
+
+
+# ============================================================
+# 7. FLOOR DIVISION
+# ============================================================
+
+print("========== Program 7 ==========")
+
+def split_bill(total_bill, people):
+
+    if total_bill <= 0:
+        return "Invalid Bill Amount"
+
+    if people <= 0:
+        return "Invalid Number of People"
+
+    share = total_bill // people
+
+    return share
+
+
+total_bill = 1250
+people = 4
+
+result = split_bill(total_bill, people)
+
+print(f"Total Bill : {total_bill}")
+print(f"People     : {people}")
+print(f"Share Each : {result}")
+print()
+
+
+# ============================================================
+# 8. MIN/MAX FUNCTIONS
+# ============================================================
+
+print("========== Program 8 ==========")
+
+def find_salary_details(salaries):
+
+    if len(salaries) == 0:
+        return "Salary List Empty"
+
+    minimum = min(salaries)
+    maximum = max(salaries)
+
+    print("Salary List :", salaries)
+    print("Minimum Salary :", minimum)
+    print("Maximum Salary :", maximum)
+
+
+salary_list = [50000, 75000, 62000, 95000]
+
+find_salary_details(salary_list)
+print()
+
+
+# ============================================================
+# 9. BASIC INPUT
+# ============================================================
+
+print("========== Program 9 ==========")
+
+def greet_user(name):
+
+    if name.strip() == "":
+        return "Invalid Name"
+
+    return f"Hello {name}! Welcome."
+
+
+name = "Shabaz"
+
+print(greet_user(name))
+print()
+
+
+# ============================================================
+# 10. NUMERIC INPUT
+# ============================================================
+
+print("========== Program 10 ==========")
+
+def next_year_age(age):
+
+    if age <= 0:
+        return "Invalid Age"
+
+    return age + 1
+
+
+age = 20
+
+print(f"Current Age : {age}")
+print(f"Next Year Age : {next_year_age(age)}")
+print()
+
+
+# ============================================================
+# 11. FLOAT INPUT
+# ============================================================
+
+print("========== Program 11 ==========")
+
+def convert_kg_to_lbs(weight_kg):
+
+    if weight_kg <= 0:
+        return "Invalid Weight"
+
+    pounds = weight_kg * 2.20462
+
+    return pounds
+
+
+weight = 70.5
+
+result = convert_kg_to_lbs(weight)
+
+print(f"Weight in KG  : {weight}")
+print(f"Weight in LBS : {result:.2f}")
+print()
+
+
+# ============================================================
+# 12. SIMPLE IF
+# ============================================================
+
+print("========== Program 12 ==========")
+
+def check_pass_fail(marks):
+
+    if marks < 0 or marks > 100:
+        return "Invalid Marks"
+
+    if marks >= 40:
+        return "Pass"
+
+    return "Fail"
+
+
+marks = 75
+
+print(f"Marks : {marks}")
+print("Result :", check_pass_fail(marks))
+print()
+
+
+# ============================================================
+# 13. IF ELSE
+# ============================================================
+
+print("========== Program 13 ==========")
+
+def even_or_odd(num):
+
+    if num % 2 == 0:
+        return "Even"
+
+    return "Odd"
+
+
+num = 8
+
+print(f"Number : {num}")
+print("Result :", even_or_odd(num))
+print()
+
+
+# ============================================================
+# 14. IF ELIF ELSE
+# ============================================================
+
+print("========== Program 14 ==========")
+
+def grade_system(score):
+
+    if score < 0 or score > 100:
+        return "Invalid Score"
+
+    if score >= 90:
+        return "Grade A"
+
+    elif score >= 70:
+        return "Grade B"
+
+    else:
+        return "Grade C"
+
+
+score = 88
+
+print(f"Score : {score}")
+print("Grade :", grade_system(score))
+print()
+
+
+# ============================================================
+# 15. NESTED IF
+# ============================================================
+
+print("========== Program 15 ==========")
+
+def validate_login(user, pwd):
+
+    if user == "":
+        return "Username Empty"
+
+    if pwd == "":
+        return "Password Empty"
+
+    if user == "admin":
+
+        if pwd == "pass123":
+            return "Login Successful"
+
+        else:
+            return "Wrong Password"
+
+    return "Invalid Username"
+
+
+user = "admin"
+pwd = "pass123"
+
+print(validate_login(user, pwd))
+print()
+
+
+# ============================================================
+# 16. FOR LOOP
+# ============================================================
+
+print("========== Program 16 ==========")
+
+def print_numbers(limit):
+
+    if limit <= 0:
+        return
+
+    for i in range(1, limit + 1):
+        print(i)
+
+
+print_numbers(5)
+print()
+
+
+# ============================================================
+# 17. WHILE LOOP
+# ============================================================
+
+print("========== Program 17 ==========")
+
+def countdown(count):
+
+    if count <= 0:
+        return
+
+    while count > 0:
+        print(count)
+        count -= 1
+
+
+countdown(5)
+print()
+
+
+# ============================================================
+# 18. BREAK STATEMENT
+# ============================================================
+
+print("========== Program 18 ==========")
+
+def first_even_number(limit):
+
+    for i in range(limit):
+
+        if i % 2 == 0:
+            print("First Even Number :", i)
+            break
+
+
+first_even_number(20)
+print()
+
+
+# ============================================================
+# 19. CONTINUE STATEMENT
+# ============================================================
+
+print("========== Program 19 ==========")
+
+def sum_of_odds(limit):
+
+    total = 0
+
+    for i in range(limit):
+
+        if i % 2 == 0:
+            continue
+
+        total += i
+
+    return total
+
+
+print("Sum of Odd Numbers :", sum_of_odds(10))
+print()
+
+
+# ============================================================
+# 20. PASS STATEMENT
+# ============================================================
+
+print("========== Program 20 ==========")
+
+def future_function():
+    pass
+
+future_function()
+
+print("Function Defined Successfully")
+print()
+
+
+# ============================================================
+# 21. CONSISTENT INDENTATION
+# ============================================================
+
+print("========== Program 21 ==========")
+
+def nested_condition():
+
+    if True:
+
+        if True:
+            print("Nested")
+
+    print("Indentation Correct")
+
+
+nested_condition()
+print()
+
+
+# ============================================================
+# 22. COMMENT USAGE
+# ============================================================
+
+print("========== Program 22 ==========")
+
+# Base salary
+base_salary = 50000
+
+# Bonus amount
+bonus = 10000
+
+# Total salary calculation
+total_salary = base_salary + bonus
+
+print("Total Salary :", total_salary)
+print()
+
+
+# ============================================================
+# 23. IMPORT STANDARD MODULE
+# ============================================================
+
+import math
+
+print("========== Program 23 ==========")
+
+def calculate_circle_area(radius):
+
+    if radius <= 0:
+        return "Invalid Radius"
+
+    area = math.pi * radius ** 2
+
+    return area
+
+
+radius = 5
+
+result = calculate_circle_area(radius)
+
+print(f"Radius : {radius}")
+print(f"Area   : {result:.2f}")
+print()
+
+
+# ============================================================
+# 24. ALL IMPORT
+# ============================================================
+
+from math import *
+
+print("========== Program 24 ==========")
+
+def math_operations():
+
+    number = 25
+
+    print("Square Root :", sqrt(number))
+    print("Power Value :", pow(2, 3))
+    print("PI Value    :", pi)
+
+
+math_operations()
+print()
+
+
+# ============================================================
+# 25. PARAMETERS
+# ============================================================
+
+print("========== Program 25 ==========")
+
+def add_numbers(a, b):
+
+    if not isinstance(a, int):
+        return "Invalid"
+
+    if not isinstance(b, int):
+        return "Invalid"
+
+    return a + b
+
+
+print("Addition :", add_numbers(5, 3))
+print()
+
+
+# ============================================================
+# 26. MULTIPLE PARAMETERS
+# ============================================================
+
+print("========== Program 26 ==========")
+
+def rectangle_area(length, width):
+
+    if length <= 0 or width <= 0:
+        return "Invalid Dimensions"
+
+    area = length * width
+
+    return area
+
+
+print("Rectangle Area :", rectangle_area(5, 3))
+print()
+
+
+# ============================================================
+# 27. LEN FUNCTION
+# ============================================================
+
+print("========== Program 27 ==========")
+
+def string_length(text):
+
+    if text == "":
+        return "Empty String"
+
+    return len(text)
+
+
+text = "Python"
+
+print("String :", text)
+print("Length :", string_length(text))
+print()
+
+# ============================================================
+# 28. WRITE TO FILE
+# ============================================================
+
+print("========== Program 28 ==========")
+
+def write_to_file():
+
+    try:
+        file = open("greeting.txt", "w")
+
+        file.write("Hello World")
+
+        file.close()
+
+        print("Data Written Successfully")
+
+    except Exception as e:
+        print("Error :", e)
+
+
+write_to_file()
+print()
+
+
+# ============================================================
+# 29. READ FROM FILE
+# ============================================================
+
+print("========== Program 29 ==========")
+
+def read_file():
+
+    try:
+        file = open("greeting.txt", "r")
+
+        content = file.read()
+
+        file.close()
+
+        print("File Content :")
+        print(content)
+
+    except FileNotFoundError:
+        print("File Not Found")
+
+
+read_file()
+print()
+
+
+# ============================================================
+# 30. BASIC TRY EXCEPT
+# ============================================================
+
+print("========== Program 30 ==========")
+
+def safe_division(a, b):
+
+    try:
+        result = a / b
+        print("Result :", result)
+
+    except ZeroDivisionError:
+        print("Cannot Divide By Zero")
+
+
+safe_division(10, 2)
+safe_division(10, 0)
+print()
+
+
+# ============================================================
+# 31. CREATE LIST
+# ============================================================
+
+print("========== Program 31 ==========")
+
+def shopping_cart():
+
+    cart = [100, 250, 75]
+
+    if len(cart) == 0:
+        print("Cart Empty")
+
+    else:
+        print("Shopping Cart Items :")
+
+        for item in cart:
+            print(item)
+
+
+shopping_cart()
+print()
+
+
+# ============================================================
+# 32. APPEND TO LIST
+# ============================================================
+
+print("========== Program 32 ==========")
+
+def add_expense(expenses, amount):
+
+    if amount <= 0:
+        print("Invalid Expense")
+
+    else:
+        expenses.append(amount)
+        print("Updated Expenses :", expenses)
+
+
+expenses = [500, 1000, 2000]
+
+add_expense(expenses, 1500)
+print()
+
+
+# ============================================================
+# 33. UPDATE DICTIONARY
+# ============================================================
+
+print("========== Program 33 ==========")
+
+def merge_employee_data(emp1, emp2):
+
+    if not isinstance(emp1, dict):
+        return
+
+    if not isinstance(emp2, dict):
+        return
+
+    emp1.update(emp2)
+
+    print("Merged Employee Data :")
+    print(emp1)
+
+
+employee1 = {"name": "John"}
+employee2 = {"salary": 50000}
+
+merge_employee_data(employee1, employee2)
+print()
+
+
+# ============================================================
+# 34. NESTED DICTIONARY
+# ============================================================
+
+print("========== Program 34 ==========")
+
+def employee_salary(data, dept, employee):
+
+    if dept not in data:
+        print("Department Not Found")
+        return
+
+    if employee not in data[dept]:
+        print("Employee Not Found")
+        return
+
+    print("Salary :", data[dept][employee])
+
+
+employees = {
+    "IT": {
+        "John": 50000,
+        "Alice": 60000
+    },
+
+    "HR": {
+        "David": 45000
+    }
+}
+
+employee_salary(employees, "IT", "Alice")
+print()
+
+
+# ============================================================
+# 35. CREATE TUPLE
+# ============================================================
+
+print("========== Program 35 ==========")
+
+def display_coordinates():
+
+    coordinates = (10, 20)
+
+    if len(coordinates) == 2:
+        print("X Coordinate :", coordinates[0])
+        print("Y Coordinate :", coordinates[1])
+
+    else:
+        print("Invalid Coordinates")
+
+
+display_coordinates()
+print()
+
+
+# ============================================================
+# 36. SET INTERSECTION
+# ============================================================
+
+print("========== Program 36 ==========")
+
+def common_skills(set1, set2):
+
+    common = set1 & set2
+
+    print("Common Skills :", common)
+
+
+skills1 = {"Python", "Java", "SQL"}
+skills2 = {"Python", "C", "SQL"}
+
+common_skills(skills1, skills2)
+print()
+
+
+# ============================================================
+# 37. MULTIPLE INSTANCES
+# ============================================================
+
+print("========== Program 37 ==========")
+
+class Employee:
+
+    def __init__(self, name, department):
+
+        self.name = name
+        self.department = department
+
+    def display_info(self):
+
+        print(f"Employee Name : {self.name}")
+        print(f"Department    : {self.department}")
+
+
+emp1 = Employee("John", "IT")
+emp2 = Employee("Alice", "HR")
+
+emp1.display_info()
+print()
+
+emp2.display_info()
+print()
+
+
+# ============================================================
+# 38. METHOD CHAINING
+# ============================================================
+
+print("========== Program 38 ==========")
+
+class Staff:
+
+    def __init__(self):
+
+        self.salary = 0
+
+    def set_salary(self, salary):
+
+        self.salary = salary
+        return self
+
+    def apply_raise(self, amount):
+
+        self.salary += amount
+        return self
+
+    def display_salary(self):
+
+        print("Final Salary :", self.salary)
+        return self
+
+
+employee = Staff()
+
+employee.set_salary(50000).apply_raise(5000).display_salary()
+print()
+
+
+# ============================================================
+# 39. POLYMORPHISM
+# ============================================================
+
+print("========== Program 39 ==========")
+
+class Worker:
+
+    def work(self):
+        print("Employee Working")
+
+
+class Developer(Worker):
+
+    def work(self):
+        print("Developer Writing Code")
+
+
+class Tester(Worker):
+
+    def work(self):
+        print("Tester Testing Application")
+
+
+employees = [Developer(), Tester()]
+
+for emp in employees:
+    emp.work()
+
+print()
+
+
+# ============================================================
+# 40. CLASS METHODS
+# ============================================================
+
+print("========== Program 40 ==========")
+
+class EmployeeData:
+
+    def __init__(self, name, salary):
+
+        self.name = name
+        self.salary = salary
+
+    @classmethod
+    def from_string(cls, emp_string):
+
+        name, salary = emp_string.split(",")
+
+        return cls(name, int(salary))
+
+    def display(self):
+
+        print("Employee Name :", self.name)
+        print("Salary        :", self.salary)
+
+
+employee = EmployeeData.from_string("Shubh,75000")
+
+employee.display()
+print()
+
+
+# ============================================================
+# 41. EMPLOYEE MANAGEMENT SYSTEM
+# ============================================================
+
+import json
+
+print("========== Program 41 ==========")
+
+class Employee:
+
+    def __init__(self, emp_id, name):
+
+        self.emp_id = emp_id
+        self.name = name
+
+    def __str__(self):
+
+        return f"{self.emp_id} - {self.name}"
+
+
+employees = {
+    1: "John",
+    2: "Alice"
+}
+
+with open("emps.json", "w") as file:
+
+    json.dump(employees, file)
+
+print("Employee Data Saved")
+
+with open("emps.json", "r") as file:
+
+    data = json.load(file)
+
+print("Loaded Data :", data)
+print()
+
+
+# ============================================================
+# 42. DATA ANALYSIS PIPELINE
+# ============================================================
+
+import statistics
+
+print("========== Program 42 ==========")
+
+sales = [1000, 2000, 3000, 4000]
+
+try:
+
+    mean_value = statistics.mean(sales)
+    median_value = statistics.median(sales)
+
+    print("Mean   :", mean_value)
+    print("Median :", median_value)
+
+except Exception as e:
+
+    print("Error :", e)
+
+print()
+
+
+# ============================================================
+# 43. CONFIGURATION MANAGER
+# ============================================================
+
+import configparser
+
+print("========== Program 43 ==========")
+
+class Config:
+    pass
+
+
+class DatabaseConfig(Config):
+
+    def load_config(self):
+
+        config = configparser.ConfigParser()
+
+        config["DATABASE"] = {
+            "host": "localhost",
+            "user": "root",
+            "password": "root"
+        }
+
+        with open("db.ini", "w") as configfile:
+            config.write(configfile)
+
+        print("Configuration File Created")
+
+
+db = DatabaseConfig()
+
+db.load_config()
+print()
+
+
+# ============================================================
+# 44. CSV DATA PROCESSOR
+# ============================================================
+
+import csv
+
+print("========== Program 44 ==========")
+
+employees = [
+    ["John", 60000],
+    ["Alice", 40000]
+]
+
+with open("employees.csv", "w", newline="") as file:
+
+    writer = csv.writer(file)
+
+    writer.writerow(["Name", "Salary"])
+
+    writer.writerows(employees)
+
+print("CSV File Created")
+
+filtered = []
+
+with open("employees.csv", "r") as file:
+
+    reader = csv.DictReader(file)
+
+    for row in reader:
+
+        if int(row["Salary"]) > 50000:
+            filtered.append(row)
+
+print("Employees Salary > 50000")
+print(filtered)
+print()
+
+
+# ============================================================
+# 45. EXPENSE TRACKER
+# ============================================================
+
+from datetime import datetime
+
+print("========== Program 45 ==========")
+
+expenses = [
+    {"category": "Food", "amount": 1000},
+    {"category": "Travel", "amount": 2000}
+]
+
+total = {}
+
+for expense in expenses:
+
+    category = expense["category"]
+
+    if category not in total:
+        total[category] = 0
+
+    total[category] += expense["amount"]
+
+print("Expense Summary")
+print(total)
+print()
+
+
+# ============================================================
+# 46. API RESPONSE HANDLER
+# ============================================================
+
+print("========== Program 46 ==========")
+
+weather_data = {
+    "temperature": 30,
+    "condition": "Sunny"
+}
+
+try:
+
+    print("Temperature :", weather_data["temperature"])
+    print("Condition   :", weather_data["condition"])
+
+except Exception as e:
+
+    print("Error :", e)
+
+print()
+
+
+# ============================================================
+# 47. COMPLETE CALCULATOR PROGRAM
+# ============================================================
+
+print("========== Program 47 ==========")
+
+def calculate(a, b, op):
+
+    try:
+
+        if op == "+":
+            return a + b
+
+        elif op == "-":
+            return a - b
+
+        elif op == "*":
+            return a * b
+
+        elif op == "/":
+            return a / b
+
+        else:
+            return "Invalid Operator"
+
+    except ZeroDivisionError:
+        return "Cannot Divide By Zero"
+
+
+print("Addition       :", calculate(10, 5, "+"))
+print("Subtraction    :", calculate(10, 5, "-"))
+print("Multiplication :", calculate(10, 5, "*"))
+print("Division       :", calculate(10, 5, "/"))
+print()
+
+
+# ============================================================
+# 48. SHOPPING CART SYSTEM
+# ============================================================
+
+print("========== Program 48 ==========")
+
+class CartItem:
+
+    def __init__(self, name, price, quantity):
+
+        self.name = name
+        self.price = price
+        self.quantity = quantity
+
+
+class ShoppingCart:
+
+    def __init__(self):
+
+        self.items = []
+
+    def add_item(self, item):
+
+        self.items.append(item)
+
+    def calculate_total(self):
+
+        total = 0
+
+        for item in self.items:
+
+            total += item.price * item.quantity
+
+        return total
+
+
+cart = ShoppingCart()
+
+item1 = CartItem("Laptop", 50000, 1)
+item2 = CartItem("Mouse", 1000, 2)
+
+cart.add_item(item1)
+cart.add_item(item2)
+
+subtotal = cart.calculate_total()
+
+gst = subtotal * 0.18
+
+final_total = subtotal + gst
+
+print("Subtotal :", subtotal)
+print("GST      :", gst)
+print("Final    :", final_total)
+print()
+
+
+# ============================================================
+# 49. TEMPERATURE CONVERTER
+# ============================================================
+
+print("========== Program 49 ==========")
+
+def celsius_to_fahrenheit(c):
+
+    return (c * 9/5) + 32
+
+
+def fahrenheit_to_celsius(f):
+
+    return (f - 32) * 5/9
+
+
+celsius = 37
+
+fahrenheit = celsius_to_fahrenheit(celsius)
+
+print(f"{celsius} C = {fahrenheit:.2f} F")
+print()
+
+
+# ============================================================
+# 50. BACKUP UTILITY
+# ============================================================
+
+import shutil
+
+print("========== Program 50 ==========")
+
+try:
+
+    source = "greeting.txt"
+    destination = "backup_greeting.txt"
+
+    shutil.copy(source, destination)
+
+    print("Backup Completed Successfully")
+
+except FileNotFoundError:
+
+    print("Source File Not Found")
+
+except PermissionError:
+
+    print("Permission Denied")
+
+print()
+
+
+# ============================================================
+# 51. URL SHORTENER
+# ============================================================
+
+import hashlib
+
+print("========== Program 51 ==========")
+
+class URLShortener:
+
+    def __init__(self):
+
+        self.urls = {}
+
+    def shorten_url(self, url):
+
+        short = hashlib.md5(url.encode()).hexdigest()[:6]
+
+        self.urls[short] = url
+
+        return short
+
+    def retrieve_url(self, short):
+
+        return self.urls.get(short, "URL Not Found")
+
+
+shortener = URLShortener()
+
+short_code = shortener.shorten_url("https://google.com")
+
+print("Short Code :", short_code)
+
+print("Original URL :", shortener.retrieve_url(short_code))
+print()
+
+
+# ============================================================
+# 52. GRADEBOOK SYSTEM
+# ============================================================
+
+print("========== Program 52 ==========")
+
+students = {
+    "John": [90, 85, 88],
+    "Alice": [78, 82, 80]
+}
+
+for student, grades in students.items():
+
+    average = sum(grades) / len(grades)
+
+    print(f"{student} Average : {average:.2f}")
+
+print()
+
+
+# ============================================================
+# 53. TASK SCHEDULER
+# ============================================================
+
+print("========== Program 53 ==========")
+
+class Task:
+
+    def __init__(self, name, due_date):
+
+        self.name = name
+        self.due_date = due_date
+
+
+tasks = [
+    Task("Project", "2025-12-01"),
+    Task("Assignment", "2025-11-01")
+]
+
+tasks.sort(key=lambda x: x.due_date)
+
+for task in tasks:
+
+    print(task.name, "-", task.due_date)
+
+print()
+
+
+# ============================================================
+# 54. INVENTORY MANAGER
+# ============================================================
+
+print("========== Program 54 ==========")
+
+class Product:
+
+    def __init__(self, name, stock):
+
+        self.name = name
+        self.stock = stock
+
+
+class Electronics(Product):
+    pass
+
+
+inventory = {
+    "Laptop": 10,
+    "Mouse": 2
+}
+
+low_stock = set()
+
+for item, stock in inventory.items():
+
+    if stock < 5:
+        low_stock.add(item)
+
+print("Inventory :", inventory)
+
+print("Low Stock Items :", low_stock)
+print()
+
+
+# ============================================================
+# 55. BUDGET PLANNER
+# ============================================================
+
+print("========== Program 55 ==========")
+
+class Category:
+
+    def __init__(self, name, limit):
+
+        self.name = name
+        self.limit = limit
+        self.spent = 0
+
+    def add_expense(self, amount):
+
+        self.spent += amount
+
+        if self.spent > self.limit:
+            print(f"Budget Exceeded in {self.name}")
+
+
+food = Category("Food", 5000)
+
+food.add_expense(2000)
+food.add_expense(3500)
+
+print("Category :", food.name)
+print("Spent    :", food.spent)
+print("Limit    :", food.limit)
+
+print()
+print("ALL 55 PROGRAMS EXECUTED SUCCESSFULLY")
